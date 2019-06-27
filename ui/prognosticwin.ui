@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Prognosis</class>
+ <widget class="QDialog" name="Prognosis">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>679</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Prognosis</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {background: white}
+QVBoxLayout{border: 1px; border-color: black}
+QPushButton{
+display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  whitespace: nowrap;
+  padding: 6px 12px;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  user-select: none;
+background: #82c8a0;
+}
+QLabel{
+color:#82c8a0;
+}
+[accessibleName=&quot;prognoseButton&quot;]:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+[accessibleName=&quot;prognoseButton&quot;]:pressed{
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: beige;
+font: 12pt;
+min-width: 8em;
+padding: 0px
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="prognostic">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>560</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>prognostic</string>
+   </property>
+   <property name="text">
+    <string>Виконання прогнозу</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="prognoseButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>460</y>
+     <width>560</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>prognoseButton</string>
+   </property>
+   <property name="text">
+    <string>Виконання прогнозу</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableApps">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>100</y>
+     <width>261</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableOptions">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>100</y>
+     <width>261</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

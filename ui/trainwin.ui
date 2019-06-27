@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Train</class>
+ <widget class="QDialog" name="Train">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>728</width>
+    <height>498</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Train</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {background: white}
+QVBoxLayout{border: 1px; border-color: black}
+QPushButton{
+display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  whitespace: nowrap;
+  padding: 6px 12px;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  user-select: none;
+ background: #f0d264;
+}
+
+
+QLabel{
+color:#f0d264;
+}</string>
+  </property>
+  <widget class="QPushButton" name="training">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>560</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>training</string>
+   </property>
+   <property name="text">
+    <string>Тренування мережі</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>330</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Похибка:</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="mistake">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>330</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>330</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Час на спробу:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>330</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>%</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>330</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>330</y>
+     <width>31</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>c</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fullButton">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>380</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>fullButton</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+     border-radius: 50%;
+font-size:15px;
+color:black;
+  }
+:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+:pressed{
+border-style: outset;
+border-width: 2px;
+border-color: beige;
+font: 12pt;
+padding: 0px
+}</string>
+   </property>
+   <property name="text">
+    <string>Повне</string>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>300</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deepButton">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>380</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>deepButton</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+     border-radius: 50%;
+font-size:15px;
+color:black;
+  }
+:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+:pressed{
+border-style: outset;
+border-width: 2px;
+border-color: beige;
+font: 12pt;
+padding: 0px
+}</string>
+   </property>
+   <property name="text">
+    <string>Глибоке</string>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>300</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="fastButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>380</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>fastButton</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+     border-radius: 50%;
+font-size:15px;
+color:black;
+  }
+:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+:pressed{
+border-style: outset;
+border-width: 2px;
+border-color: beige;
+font: 12pt;
+padding: 0px
+}</string>
+   </property>
+   <property name="text">
+    <string>Швидке</string>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>300</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="doubleButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>380</y>
+     <width>100</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>doubleButton</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+     border-radius: 50%;
+font-size:15px;
+color:black;
+  }
+:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+:pressed{
+border-style: outset;
+border-width: 2px;
+border-color: beige;
+font: 12pt;
+padding: 0px
+}</string>
+   </property>
+   <property name="text">
+    <string>Подвійне</string>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>300</number>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableOptions">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>90</y>
+     <width>561</width>
+     <height>221</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

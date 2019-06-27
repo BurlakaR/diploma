@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Update</class>
+ <widget class="QDialog" name="Update">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>854</width>
+    <height>741</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data updating</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {background: white}
+QVBoxLayout{border: 1px; border-color: black}
+QPushButton{
+display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  whitespace: nowrap;
+  padding: 6px 12px;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  user-select: none;
+ background: #fa5a5a;
+}
+[accessibleName=&quot;updateButton&quot;]{
+     border-radius: 85%;
+  }
+[accessibleName=&quot;updateButton&quot;]:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+[accessibleName=&quot;updateButton&quot;]:pressed{
+border-style: outset;
+border-width: 2px;
+border-radius: 85%;
+border-color: beige;
+font: 12pt;
+min-width: 8em;
+padding: 0px
+}
+
+QLabel{
+color:#fa5a5a;
+}
+
+
+QCalendarWidget QToolButton {
+  	
+  	color: white;
+  	font-size: 12px;
+  	background-color:#fa5a5a;
+  }
+  QCalendarWidget QMenu {
+  	
+  	color: white;
+  	font-size: 12px;
+  	background-color: rgb(100, 100, 100);
+border:1px solid black;
+  }
+  QCalendarWidget QSpinBox { 
+
+  	font-size:12px; 
+  	color: white; 
+  	background-color:#fa5a5a;
+  	selection-background-color: rgb(136, 136, 136);
+  	selection-color: rgb(255, 255, 255);
+  }
+  QCalendarWidget QSpinBox::up-button { subcontrol-origin: border;  subcontrol-position: top right;  width:30px; }
+  QCalendarWidget QSpinBox::down-button {subcontrol-origin: border; subcontrol-position: bottom right;  width:30px;}
+   
+  /* header row */
+  QCalendarWidget QWidget { alternate-background-color: rgb(255, 255, 255); }
+   
+  /* normal days */
+  QCalendarWidget QAbstractItemView:enabled 
+  {
+  	font-size:12px;  
+  	color: rgb(180, 180, 180);  
+  	background-color: black;  
+  	selection-background-color: rgb(64, 64, 64); 
+  	selection-color: rgb(0, 255, 0); 
+  }
+   
+  /* days in other months */
+  /* navigation bar */
+QCalendarWidget QWidget#qt_calendar_navigationbar
+{ 
+background-color: #fa5a5a; 
+}
+
+QCalendarWidget QAbstractItemView:disabled 
+{ 
+color: rgb(64, 64, 64); 
+}</string>
+  </property>
+  <widget class="QPushButton" name="newData">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>20</y>
+     <width>751</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>newData</string>
+   </property>
+   <property name="text">
+    <string>Оновлення даних</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="updateButton">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>540</y>
+     <width>171</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="accessibleName">
+    <string>updateButton</string>
+   </property>
+   <property name="text">
+    <string>ОНОВИТИ</string>
+   </property>
+   <property name="autoRepeatDelay">
+    <number>300</number>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="calendarStart">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>140</y>
+     <width>251</width>
+     <height>161</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>100</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Початкова дата</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>310</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Кінцева дата</string>
+   </property>
+  </widget>
+  <widget class="QOpenGLWidget" name="openGLWidget">
+   <property name="geometry">
+    <rect>
+     <x>549</x>
+     <y>139</y>
+     <width>253</width>
+     <height>164</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="calendarFinish">
+   <property name="geometry">
+    <rect>
+     <x>551</x>
+     <y>351</y>
+     <width>251</width>
+     <height>161</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QOpenGLWidget" name="openGLWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>350</y>
+     <width>253</width>
+     <height>164</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableApps">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>471</width>
+     <height>611</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>openGLWidget_2</zorder>
+  <zorder>openGLWidget</zorder>
+  <zorder>newData</zorder>
+  <zorder>updateButton</zorder>
+  <zorder>calendarStart</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>calendarFinish</zorder>
+  <zorder>tableApps</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

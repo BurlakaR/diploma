@@ -1,0 +1,11 @@
+,Options,Trend,Model
+0,RATING,False,True
+1,REVIEWS,False,False
+2,FIVE_STARS,False,False
+3,FOUR_STARS,False,False
+4,THREE_STARS,False,False
+5,TWO_STARS,False,False
+6,ONE_STARS,False,False
+7,vpn,True,False
+8,android vpn,True,False
+9,mobile vpn,True,False
